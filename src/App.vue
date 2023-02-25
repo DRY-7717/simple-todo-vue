@@ -5,10 +5,10 @@
         <div class="col-lg-8 mx-auto mt-5">
           <div class="card border-0 shadow">
             <div class="card-body">
-              <h3 class="card-title">Simple Todo App refs</h3>
+              <h3 class="card-title">Simple Todo App</h3>
               <h5 class="text-muted">Total Todo: {{ totaltodo }}</h5>
               <div class="row mt-4">
-                <div class="col-12 col-sm-9 col-md-10 col-lg-10 ">
+                <div class="col-12 col-sm-9 col-md-10 col-lg-10">
                   <input
                     type="text"
                     v-model="text"
@@ -17,8 +17,11 @@
                     @keyup.enter="addtodo"
                   />
                 </div>
-                <div class="col-12 col-sm-3 col-md-2 col-lg-2 ">
-                  <button class="btn btn-primary w-100  w-lg-0 mt-3 mt-sm-0 mt-md-0 mt-lg-0" @click="addtodo">
+                <div class="col-12 col-sm-3 col-md-2 col-lg-2">
+                  <button
+                    class="btn btn-primary w-100 w-lg-0 mt-3 mt-sm-0 mt-md-0 mt-lg-0"
+                    @click="addtodo"
+                  >
                     Submit
                   </button>
                 </div>
@@ -45,10 +48,10 @@ export default {
     });
 
     onMounted(() => {
-      if (localStorage.getItem('todos')) {
-        todos.list = JSON.parse(localStorage.getItem('todos'))
+      if (localStorage.getItem("todos")) {
+        todos.list = JSON.parse(localStorage.getItem("todos"));
       }
-    })
+    });
 
     const addtodo = () => {
       todos.list.unshift({
