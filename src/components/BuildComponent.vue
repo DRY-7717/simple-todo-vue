@@ -2,7 +2,7 @@
   <ul class="list-group mt-4">
     <li
       class="list-group-item border-0 shadow-sm p-3 d-flex justify-content-between align-items-center mb-3"
-      v-for="(todo) in list"
+      v-for="(todo, index) in list"
       :key="todo"
     >
       <del v-if="todo.isDone">{{ todo.activity }}</del>
