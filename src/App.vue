@@ -5,7 +5,7 @@
         <div class="col-lg-8 mx-auto mt-5">
           <div class="card border-0 shadow">
             <div class="card-body">
-              <h3 class="card-title">Simple Todo App (Test Branch lagi)</h3>
+              <h3 class="card-title">Simple Todo App (Test Branch coba)</h3>
               <h5 class="text-muted">Total Todo: {{ totaltodo }}</h5>
               <div class="row mt-4">
                 <div class="col-12 col-sm-9 col-md-10 col-lg-10">
